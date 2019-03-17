@@ -60,7 +60,6 @@ When trying to connect remotely to your Heroku database on an open network such 
      * **burger_name**: a string.
      * **devoured**: a boolean.
 
------- GOT TO THIS POINT
 3. Still in the `db` folder, create a `seeds.sql` file. In this file, write insert queries to populate the `burgers` table with at least three entries.
 
 4. Run the `schema.sql` and `seeds.sql` files into the mysql server from the command line
@@ -140,6 +139,7 @@ When trying to connect remotely to your Heroku database on an open network such 
 
      * Create a button in `index.handlebars` that will submit the user input into the database.
 
+------ GOT TO THIS POINT
 #### Directory structure
 
 All the recommended files and directories from the steps above should look like the following structure:

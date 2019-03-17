@@ -12,6 +12,14 @@ var PORT = process.env.PORT || 8080;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// Static directory
+// ================================================================================
+app.use(express.static("public"));
+
+// Routes
+// ================================================================================
+
+
 // Starting Express app
 // ================================================================================
 app.listen(PORT, function() {
