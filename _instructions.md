@@ -44,7 +44,6 @@ When trying to connect remotely to your Heroku database on an open network such 
 
 6. Install MySQL npm package: `npm install mysql`.
 
------- GOT TO THIS POINT
 7. Require the following npm packages inside of the server.js file:
    * express
 
@@ -61,6 +60,7 @@ When trying to connect remotely to your Heroku database on an open network such 
      * **burger_name**: a string.
      * **devoured**: a boolean.
 
+------ GOT TO THIS POINT
 3. Still in the `db` folder, create a `seeds.sql` file. In this file, write insert queries to populate the `burgers` table with at least three entries.
 
 4. Run the `schema.sql` and `seeds.sql` files into the mysql server from the command line
