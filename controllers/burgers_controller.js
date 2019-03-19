@@ -1,5 +1,4 @@
 var express = require("express");
-
 var router = express.Router();
 
 // Import the model to use its database functions.
@@ -12,7 +11,7 @@ router.get("/", function(req, res) {
     var hbsObject = {
       burgers: data
     };
-    console.log(hbsObject);
+    //console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });
@@ -24,7 +23,7 @@ router.post("/burgers", function(req, res) {
     req.body.burger_name
   ], function(result) {
     // Send back the ID of the new quote
-    res.json({ id: result.insertId });
+    //res.json({ id: result.insertId });
     res.redirect('/');
   });
 });
@@ -32,7 +31,7 @@ router.post("/burgers", function(req, res) {
 router.put("/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
-  console.log("condition", condition);
+  // console.log("condition", condition);
 
   burger.updateOne({
     devoured: true
