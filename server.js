@@ -23,6 +23,7 @@ var routes = require("./controllers/burgers_controller.js");
 // Static directory
 // ================================================================================
 app.use(express.static("public"));
+app.use('/', routes);
 
 // Starting Express app
 // ================================================================================
